@@ -39,6 +39,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lista_5", "Lista_5", "{A032
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "enditades_civis", "enditades_civis\enditades_civis.csproj", "{26A71FA7-481F-4EEF-BD83-4D08E22AEDC9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lista_7", "Lista_7", "{4222BFD0-0506-447D-AEFE-9F7248AC701E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDI_menus", "MDI_menus\MDI_menus.csproj", "{3A6ABBFA-DBBA-4C3A-ACB9-DE1584F795B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{26A71FA7-481F-4EEF-BD83-4D08E22AEDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26A71FA7-481F-4EEF-BD83-4D08E22AEDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26A71FA7-481F-4EEF-BD83-4D08E22AEDC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6ABBFA-DBBA-4C3A-ACB9-DE1584F795B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6ABBFA-DBBA-4C3A-ACB9-DE1584F795B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6ABBFA-DBBA-4C3A-ACB9-DE1584F795B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6ABBFA-DBBA-4C3A-ACB9-DE1584F795B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +123,7 @@ Global
 		{E3E78F23-65F6-45B6-9A84-AF7D265F5C4D} = {A3305C7A-6969-4E2C-90E6-D1597BC9537A}
 		{2F7E9AC8-FD5F-45B5-8BAF-224316138DF7} = {A3305C7A-6969-4E2C-90E6-D1597BC9537A}
 		{26A71FA7-481F-4EEF-BD83-4D08E22AEDC9} = {A032F60C-CDF1-425E-9D03-96482BC2B680}
+		{3A6ABBFA-DBBA-4C3A-ACB9-DE1584F795B4} = {4222BFD0-0506-447D-AEFE-9F7248AC701E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D186B77-8D3F-4CF2-B02D-52C4518C33D4}
