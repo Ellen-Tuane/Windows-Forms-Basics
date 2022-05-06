@@ -17,6 +17,11 @@ namespace jogo_memoria
         string firstChoice;
         string secondChoice;
         int tries;
+        //Set the number of images you have.
+        int imageCount = 6;
+
+        //Create path.
+        string path = @"C:\Users\ellen\source\Repos\Windows-Forms-Basics\jogo_memorio\memória_imagens\";
         List<PictureBox> pictures = new List<PictureBox>();
         PictureBox picA;
         PictureBox picB;
@@ -68,9 +73,14 @@ namespace jogo_memoria
             int topPos = 20;
             int rows = 0;
 
-            for (int i = 0; i < 12; i++)
+            for (int i = 1; i < 12; i++)
             {
-                PictureBox newPic = new PictureBox();
+                PictureBox newPic = new PictureBox()
+                {
+                    Name = $"Screenshot_{i}",
+                    //Assign the image file.
+                    Image = Image.FromFile(path + $"Screenshot_{i}.png")
+                };
                 newPic.Height = 50;
                 newPic.Width = 50;
                 newPic.BackColor = Color.LightGray;
@@ -191,6 +201,11 @@ namespace jogo_memoria
             GameTimer.Stop();
             gameOver = true;
             MessageBox.Show(msg + " Click Reiniciar Para Jogar Novamente.");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.progressBar1.Maximum = 100;
         }
     }
 }

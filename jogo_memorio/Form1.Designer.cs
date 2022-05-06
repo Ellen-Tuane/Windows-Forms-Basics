@@ -33,6 +33,7 @@
             this.lslStatus = new System.Windows.Forms.Label();
             this.lblTimerLeft = new System.Windows.Forms.Label();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // btnRestart
@@ -49,7 +50,7 @@
             this.lslStatus.AutoSize = true;
             this.lslStatus.BackColor = System.Drawing.SystemColors.Control;
             this.lslStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lslStatus.Location = new System.Drawing.Point(589, 167);
+            this.lslStatus.Location = new System.Drawing.Point(591, 118);
             this.lslStatus.Name = "lslStatus";
             this.lslStatus.Size = new System.Drawing.Size(115, 20);
             this.lslStatus.TabIndex = 1;
@@ -59,7 +60,7 @@
             // lblTimerLeft
             // 
             this.lblTimerLeft.AutoSize = true;
-            this.lblTimerLeft.Location = new System.Drawing.Point(585, 276);
+            this.lblTimerLeft.Location = new System.Drawing.Point(591, 196);
             this.lblTimerLeft.Name = "lblTimerLeft";
             this.lblTimerLeft.Size = new System.Drawing.Size(119, 20);
             this.lblTimerLeft.TabIndex = 2;
@@ -70,16 +71,25 @@
             this.GameTimer.Interval = 1000;
             this.GameTimer.Tick += new System.EventHandler(this.TimerEvent);
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(564, 274);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(171, 29);
+            this.progressBar1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lblTimerLeft);
             this.Controls.Add(this.lslStatus);
             this.Controls.Add(this.btnRestart);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,5 +102,6 @@
         private Label lslStatus;
         private Label lblTimerLeft;
         private System.Windows.Forms.Timer GameTimer;
+        private ProgressBar progressBar1;
     }
 }
