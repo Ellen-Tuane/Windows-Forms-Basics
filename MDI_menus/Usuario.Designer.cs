@@ -1,6 +1,6 @@
 ﻿namespace MDI_menus
 {
-    partial class Form2
+    partial class Usuario
     {
         /// <summary>
         /// Required designer variable.
@@ -71,6 +71,7 @@
             this.cadastrarUsuarioToolStripMenuItem.Name = "cadastrarUsuarioToolStripMenuItem";
             this.cadastrarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cadastrarUsuarioToolStripMenuItem.Text = "Cadastrar Usuario";
+            this.cadastrarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarUsuarioToolStripMenuItem_Click);
             // 
             // atualiazarUsuárioToolStripMenuItem
             // 
@@ -86,7 +87,7 @@
             this.buscarUsuarioPorCpfToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.buscarUsuarioPorCpfToolStripMenuItem.Text = "Buscar Usuario por cpf";
             // 
-            // Form2
+            // Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,7 +95,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form2";
+            this.Name = "Usuario";
             this.Text = "Form2";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
